@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpectTek Co. | Spectrometer Packages</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f8fb;
+      color: #17202a;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b2545, #134074);
+      color: white;
+      padding: 28px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .company-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo-container {
+      background: white;
+      padding: 8px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .company-logo {
+      height: 90px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      color: #dce8f7;
+    }
+
+    .kvk {
+      text-align: right;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .hero {
+      padding: 70px 8%;
+      text-align: center;
+      background: white;
+    }
+
+    .hero-logo {
+      height: 140px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+      color: #0b2545;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .packages {
+      padding: 60px 8%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      background: #eaf0f7;
+      padding: 12px;
+    }
+
+    .images img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      background: white;
+      border-radius: 12px;
+    }
+
+    .card-content {
+      padding: 26px;
+    }
+
+    .card h3 {
+      color: #134074;
+      margin-top: 0;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .description {
+      background: #f1f6fb;
+      padding: 14px;
+      border-left: 4px solid #134074;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
+
+    .contact {
+      background: #0b2545;
+      color: white;
+      padding: 60px 8%;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    form {
+      max-width: 760px;
+      margin: auto;
+      background: white;
+      color: #17202a;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 16px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccd6e0;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-height: 130px;
+    }
+
+    button {
+      margin-top: 24px;
+      width: 100%;
+      padding: 14px;
+      background: #134074;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0b2545;
+    }
+
+    footer {
+      padding: 24px 8%;
+      text-align: center;
+      background: #061826;
+      color: #cbd6e2;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .company-info {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .company-logo {
+        height: 70px;
+      }
+
+      .hero-logo {
+        height: 110px;
+      }
+
+      .kvk {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="company-info">
+      <div class="logo-container">
+        <img src="logo.png" alt="SpectTek Co. Logo" class="company-logo">
+      </div>
+
+      <div>
+        <h1>SpectTek Co.</h1>
+        <p>Applied Spectroscopy, Spectrometer Packages & Scientific Software</p>
+      </div>
+    </div>
+
+    <div class="kvk">
+      KvK Number: 98099272<br />
+      Email: specttec@gmail.com
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="logo.png" alt="SpectTek Co. Logo" class="hero-logo">
+
+    <h2>Spectrometer + Fiber + Software Packages</h2>
+
+    <p>
+      SpectTek Co. provides integrated spectrometer packages including an Ocean Optics USB4000
+      spectrograph, fiber-optic connection, wavelength/response calibration, and dedicated software
+      tools for spectral acquisition, gas analysis, and vibration-induced optical signal monitoring.
+    </p>
+  </section>
+
+  <section class="packages">
+
+    <div class="card">
+      <div class="images">
+        <img src="spectrometer.png" alt="Ocean Optics USB4000 Spectrometer">
+        <img src="software.png" alt="SpectTek Software Interface">
+      </div>
+
+      <div class="card-content">
+        <h3>Package 1 — Gas Spectral Analysis Package</h3>
+
+        <ul>
+          <li>Ocean Optics USB4000 Miniature Fiber Optic Spectrometer</li>
+          <li>Approx. 196–910 nm wavelength range</li>
+          <li>USB 2.0 connection</li>
+          <li>SMA 905 optical input</li>
+          <li>Fiber optic measurement configuration</li>
+          <li>Software licence for spectra acquisition and gas processing</li>
+          <li>Calibration of wavelength range and optical response</li>
+        </ul>
+
+        <div class="description">
+          This package is intended to help users detect, inspect, and measure gas spectral features
+          associated with <strong>water vapor / water-related chemistry</strong> and
+          <strong>carbon dioxide / carbon-bearing gas chemistry</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="images">
+        <img src="spectrometer.png" alt="Ocean Optics USB4000 Spectrometer">
+        <img src="software.png" alt="SpectTek Software Interface">
+      </div>
+
+      <div class="card-content">
+        <h3>Package 2 — Vibration Optical Monitoring Package</h3>
+
+        <ul>
+          <li>Ocean Optics USB4000 Miniature Fiber Optic Spectrometer</li>
+          <li>Approx. 196–910 nm wavelength range</li>
+          <li>USB 2.0 connection</li>
+          <li>SMA 905 optical input</li>
+          <li>Software licence for vibration-induced optical signal analysis</li>
+          <li>Real-time spectrometer GUI for optical vibration monitoring</li>
+          <li>Calibration of wavelength range and optical response</li>
+        </ul>
+
+        <div class="description">
+          A real-time spectrometer GUI for monitoring vibration-induced optical signals on solid
+          metal surfaces. Designed for feasibility studies in non-contact defect monitoring using
+          Ocean Optics / SeaBreeze spectrometers.
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contact">
+    <h2>Request a Quotation</h2>
+
+    <form onsubmit="sendQuotation(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+
+      <label for="company">Company / Institute</label>
+      <input type="text" id="company">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required>
+
+      <label for="package">Select Package</label>
+      <select id="package" required>
+        <option value="">Choose a package</option>
+        <option>Package 1 — Gas Spectral Analysis Package</option>
+        <option>Package 2 — Vibration Optical Monitoring Package</option>
+        <option>Both Packages</option>
+      </select>
+
+      <label for="project">Project Description / Application</label>
+      <textarea
+        id="project"
+        required
+        placeholder="Describe your project, measurement needs, gases/materials, wavelength range, calibration needs, and expected use case.">
+      </textarea>
+
+      <button type="submit">Send Quotation Request</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2026 SpectTek Co. | KvK: 98099272 | Quotation prepared upon request with full package details.
+  </footer>
+
+  <script>
+    function sendQuotation(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const company = document.getElementById("company").value;
+      const email = document.getElementById("email").value;
+      const selectedPackage = document.getElementById("package").value;
+      const project = document.getElementById("project").value;
+
+      const subject = encodeURIComponent(
+        "Quotation Request - SpectTek Co. Spectrometer Package"
+      );
+
+      const body = encodeURIComponent(
+`Dear SpectTek Co.,
+
+I would like to request a quotation for the following spectrometer package.
+
+Name: ${name}
+Company / Institute: ${company}
+Email: ${email}
+
+Selected Package:
+${selectedPackage}
+
+Project / Application:
+${project}
+
+Please prepare a quotation with all package details.
+
+Best regards,
+${name}`
+      );
+
+      window.location.href =
+        `mailto:specttec@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+
+</body>
+</html>
